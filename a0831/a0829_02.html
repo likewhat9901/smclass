@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+    </head>
+    <body>
+        <script>
+            //""는 문자라는 의미, +는 붙여달라는 의미(python은 쉼표)
+            //<br/> : 줄단락
+            //변수에도 타입이 있음. 5가지. 1.문자형(string,str) 2.숫자형(number,num) 3.논리형(boolean,bool) 4.undefined 5.null
+            //문자형은 +를 해도 그냥 따라붙어버린다. Default는 문자형
+            //-,*,/는 자동으로 숫자형으로 인식하지만, +는 기본 문자형으로 인식한다.
+            //문자형에서 숫자형으로 변경방법: 변수 앞에 Number 붙이기 ex. Number(num1) *number는 안됨.
+            //추가) 숫자형에서도 정수와 실수로 나뉜다. 소수점 없으면 실수. 소수점 있으면 정수
+            //Q. document.write 안에서 다 더해서 단락 나눌 수 있나. 개발자들은 어떻게 줄이나
+            //논리형은 true or false만 있다. undefined는 undefined로 출력. null은 값이 없는것.
+            var num1 = Number(prompt("숫자1를 입력하세요."));
+            var num2 = Number(prompt("숫자2를 입력하세요."));
+            document.write((num1+num2)+"<br/>");
+            document.write((num1-num2)+"<br/>");
+            document.write((num1*num2)+"<br/>");
+            document.write((num1/num2)+"<br/>");
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>논리형 데이터</title>
+    </head>
+    <body>
+        <script>
+            //논리형 데이터는 true or false 밖에 없다.
+            //논리형 = boolean형
+            /*
+            var a = true;
+            var b = false;
+            var c = 10>5; //true
+            var d = 50>100; //false
+            document.write(a+"<br/>");
+            document.write(b+"<br/>");
+            document.write(c+"<br/>");
+            document.write(d+"<br/>");
+            */
+
+           var a = 10==5;  //false;
+           var b = 20==20; //true;
+           var c = 10>5;   //true;
+           var d = 5>=0;   //true;
+           var e = "10";   //문자형 데이터
+           var f = 10;     //숫자형 데이터
+           var g = e==f;   //내용만 캍으면 true, 타입은 고려하지 않는다.
+           var h = e===f;  //내용이 같고 타입까지 일치하면 true, 내용이 같지만 타입이 다르면 false
+           // 컴퓨터에서는 =는 넣어라라는 의미. ==로 해야 같다는 의미.
+           // >=를 =>로 바꾸는 것은 불가하다. =는 부등호 뒤에 와야 한다.
+           
+           document.write("20==20 결과값 : "+b+"<br/>");
+           document.write(" '10'== 10 결과값 : "+g+"<br/>");
+           document.write(" '10'=== 10 결과값 : "+h+"<br/>");
+           //python과 java는 ==만 해도 타입까지 고려한다. javascript만 타입까지 고려하려면 ===를 써야한다.
+           //Q.''는 무슨 의미인지
+           
+           //수업 마무리: 변수라는 개념을 잘 가지고 가야한다.
+           //Number는 실수형?
+
+
+        </script>
+    </body>
+</html>

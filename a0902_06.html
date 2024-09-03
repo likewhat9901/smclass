@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 300px;
+      height: 200px;
+      border: 3px solid black;
+    }
+    span{
+      display: inline-block;
+      width: 300px;
+      height: 200px;
+      border: 3px solid black;
+    }
+
+  </style>  
+</head>
+<body>
+  <div>div사각모델</div> <!--옆의 공간이 있더라도 하단으로 생성 -> 블록 방식-->
+  <div>div사각모델</div>
+  <div>div사각모델</div>
+  <span>span사각모델</span> <!--옆의 공간이 있으면 우측으로 생성, 없으면 하단으로 생성 -> 인라인 방식-->
+  <span>span사각모델</span> <!--span은 width와 height가 안 먹힘. display: inline-block을 추가해서 블록방식을 추가해야 먹힘.-->
+  <span>span사각모델</span> <!--display: block으로 추가하면 하단으로 생성.-->
+
+
+</body>
+</html>

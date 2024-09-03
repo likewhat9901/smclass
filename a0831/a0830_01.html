@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            //자바스크립트는 html 안에서만 사용할 수 있다.
+            /*
+            alert("숫자를 입력하셔야 합니다.");
+            confirm("로그아웃을 하시겠습니까?");
+            console.log("콘솔창에서 데이터를 출력할때 사용합니다.");
+            */
+            //주석: 설명문
+            //prompt("출생년도를 입력하세요.");
+            
+            /*
+            var birthYear = prompt("출생년도를 입력하세요.");
+            document.write("출생년도 : "+birthYear+"<br/>");
+            //+의 의미: 연결하라
+            //java는 ''는 문자로 인식. ""는 문자형으로 인식. javascript는 아님?
+            var thisYear = 2024;
+            document.write("당신의 나이 : "+(thisYear-birthYear));
+            */
+
+            // 웹에서 입력받는 데이터는 모두 문자형타입. 이유는 대부분이 문자형으로 인식할 수 있기 때문.
+            var num1 = Number(prompt("숫자1을 입력하세요."));
+            var num2 = Number(prompt("숫자2을 입력하세요."));
+
+            document.write((num1-num2)+"<br/>");
+            document.write((num1*num2)+"<br/>");
+            document.write((num1/num2)+"<br/>");
+            document.write((num1+num2)+"<br/>");
+
+
+        </script>
+    </body>
+</html>

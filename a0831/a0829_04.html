@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            // 문제: 2개의 숫자를 입력받아, 4칙연산 결과값을 출력하시오.
+            //문자형에는 -,*,/는 없지만 +는 있다. 그래서 숫자형으로 변경해주지 않으면 +가 문제가 된다.
+            //-,*,/는 문자형도 확인 후 자동으로 숫자형 인식하지만, 컴퓨터가 확인작업을 해야하기 때문에 부담을 준다.
+            //Number는 명령어라고 이해하면 편하고, 정확히는 객체라고 한다.
+            //주석처리 방식: // - 1줄 주석, /*내용*/ - 여러줄 주석
+            /*var num1 = Number(prompt("숫자1를 입력하세요."));
+            var num2 = Number(prompt("숫자2를 입력하세요."));
+            
+            document.write((num1+num2)+"<br/>");
+            document.write((num1-num2)+"<br/>");
+            document.write((num1*num2)+"<br/>");
+            document.write((num1/num2)+"<br/>");
+            */
+
+            //document.write(10/3+"<br/>"); //나누기 연산자
+            //document.write(10%3+"<br/>"); //나머지 연산자
+
+            // 문제: 2개의 숫자를 입력받아, 몫과 나머지를 출력하시오.
+            var num1 = Number(prompt("숫자1을 입력하세요."));
+            var num2 = Number(prompt("숫자2를 입력하세요."));
+            // 숫자형 데이터 - 정수형 parseInt, 실수형 parseFloat
+            // alert, confirm, prompt, console.log
+            // Number, parseInt, parseFloat
+            // console.log - 웹창에서 f12 누르면 console 창을 확인할 수 있다.
+            // document는 웹창에서 바로 보여지는 부분이 document.
+            // document에 출력하지 않고 정상 작동하는지 확인하기 위해서 console 창을 활용한다.
+            document.write(parseInt(num1/num2)+"<br/>");
+            document.write((num1%num2)+"<br/>");
+
+            console.log("콘솔창에 데이터를 출력함.");
+            console.log(10+5);
+            console.log(10-5);
+            console.log(10*5);
+            console.log(10/5);
+
+
+        </script>
+    </body>
+</html>
