@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="" name="">
+    <label>아이디</label>
+    <input type="text" name="id" id="id"><br>
+    <label>검색</label>
+    <input type="search" name="search"><br>  <!-- search는 x박스가 있는 것 외에는 text와 같음 -->
+    <label>이메일</label>
+    <input type="email" name="email" required><br>  <!-- required : 필수입력 -->
+    <!-- email도 @까지 확인한다는 것 외에 text와 같음. 원래 JavaScript의 기능이었던 것. 점차 html에 추가되는 중. 
+     이외에도 url, tel, number, range, radio, checkbox, color, date 등이 있음. tel은 아직 기능이 없음. 만들다만 느낌.-->
+    <label>달력</label>
+    <input type="date" name="date"><br>  <!-- 이것도 자바스크립트에 있는 기능. 좀더 예쁘지만 복잡한듯 -->
+    <!-- 이외: month, week, time, datetime-local -->
+    <label>시간</label>
+    <input type="time" name="time"><br> <!-- 전송될때는 코드값으로 전송됨. 따라서 다시 변환해야 제대로 나옴. -->
+    <label>파일첨부</label>
+    <input type="file" name="file"><br> <!-- 파일첨부하는 타입, ex.게시판 파일첨부 -->
+    <label>과선택</label>
+    <select name="major">
+      <optgroup label="공과대학"> <!-- optgroup은 잘 사용하지는 않음 -->
+        <option value="archi">건축공학과</option>
+        <option value="mechanic">기계공학과</option>
+        <option value="computer" selected>컴퓨터공학과</option> <!-- selected : default 선택값 / input의 경우 checked-->
+        <option value="elec">전자공학과</option>
+      </optgroup>
+    </select><br>
+
+    <input type="submit" value="전송">
+    <input type="reset" value="지우기">
+
+
+
+
+  </form>
+
+
+
+</body>
+</html>

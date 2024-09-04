@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #main{
+      width: 480px;
+      height: 500px;
+      border: 1px solid #e1e3e5;
+      border-radius: 12px;  /* 각이 있는 부분에 반지름 12px로 둥글게 만들어라 */
+      margin: 50px auto;
+    }
+    h1{
+      text-align: center;
+      color: #09aa5c;
+      font-size: 60px;
+      font-weight: 900;
+    }
+    form{
+      width: 410px;
+      margin: 0 auto;
+    }
+    input{
+      width: 410px;
+      height: 40px;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    #err{
+      color: red;
+      font-weight: 700;
+    }
+    button{
+      width: 410px;
+      height: 60px;
+      margin-top: 30px;
+      background: #09aa5c;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="main">
+    <header>
+      <h1>NAVER</h1>
+      <div class="">
+        
+      </div>
+    </header>
+    <section>
+      <form action="http://www.daum.net" method="get" name="loginFrm">
+        <input type="hidden" name="ip" value="127.0.0.1"><br>
+        <input type="text" name="id" id="id" placeholder="아이디 또는 전화번호"S><br> <!-- autofocus : 페이지 시작 시, 커서를 자동 위치시키는 기능 --> 
+        <!-- text는 한줄만 가능. 여러줄은 textarea. -->
+        <input type="password" name="pw" id="pw" placeholder="비밀번호" autofocus><br>
+        <div id="err"></div>
+        <button type="ㄴbutton" onclick="loginBtn()">로그인</button>
+      </form>
+    </section>
+  
+  </div>
+  <script>
+    function loginBtn(){
+      alert("함수를 호출합니다.");
+      var id = document.getElementById("id").value;  /* id의 값을 가져오세요 */
+      /* alert("입력한 id: "+id); */
+      if(id==""){
+        // alert("아이디를 입력하세요.");
+        var txt = "아이디 또는 전화번호를 입력해주세요.";
+        document.getElementById("err").innerText = txt
+        document.getElementById("id").focus();
+      }
+
+      var pw = document.getElementById("pw").value;  /* pw의 값을 가져오세요 */
+      /* alert("입력한 pw: "+pw); */
+
+      loginFrm.submit();  /* action 주소로 이동하는 명령어. 이때 쓰는 것이 폼의 name / 주소창을 보면 hidden까지 보인다. */
+
+    }
+
+
+  </script>
+
+</body>
+</html>
