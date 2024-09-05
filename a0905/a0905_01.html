@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <style>   /* css */
+    /* 현재 버전: CSS3 (CSS1 -> CSS2 -> CSS3) */
+    /* 캐스캐이딩(Cascading): style은 순차적으로 적용되어, 중복되는 style은 마지막 style이 적용된다. */
+    /* 캐스캐이딩 스타일시트: css */
+    /* 스타일 우선순위: 사용자 스타일(중요) -> 제작자 스타일(중요) -> 제작자 스타일(일반) -> 사용자 스타일(일반) -> 브라우저 스타일 */
+    /* !important: 중요 스타일  */
+    /* 스타일 우선순위2: 인라인 스타일(해당 태그에 바로 적용시킨 스타일) -> id 스타일 -> 클래스 스타일 -> 태그 스타일 */
+    /* 스타일 상속: 자식 태그는 부모 태그의 스타일을 우선 적용한다. */
+    /* 브라우저 접두사: 표준 속성이 아닌 브라우저별로 적용되는 스타일 속성에 적용. */
+
+    *{ margin: 0; padding: 0;}    /* 중요 */
+    h1, h2{
+      color: red;
+      text-align: center;
+      border: 1px solid black;
+    }
+    img{
+      width: 600px;
+    }
+    ul{
+      list-style-type: square;    /* disc, circle, square, none */
+    }
+    p.bluetext{    /* class 선택자, p태그와 bluetext클래스를 합쳐서 스타일을 정의할수도 있음. */
+      color: blue;
+      font-size: 15px;
+      text-align: right;
+    }
+    #main{
+      width: 800px; height: 600px;
+      margin: 0 auto;
+      border: 1px solid black;
+    }
+
+
+  </style>
+
+</head>
+<body>    <!-- document -->
+  <div id="main">
+    <h2>스타일</h2>
+    <p class="bluetext">문단 단락을 나누는 태그입니다.</p>
+    <div>top↑</div>
+    <img src="images/s01.jpg" alt="시드니 하버브릿지">
+    <h1>세계 3대 미항</h1>
+    <ul class="bluetext">
+      <li>시드니(Sydney), 호주</li>
+      <li>리우데자네이루(Rio de Janeiro), 브라질</li>
+      <li>나폴리(Naples), 이탈리아</li>
+      <li></li>
+    </ul>
+
+  </div>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{  }
+    h3{
+      width: 300px; height: 100px; border: 1px solid black;
+      white-space: nowrap;    /* 줄단락을 없앰 */
+      overflow: hidden;   /* 테두리를 벗어난 것을 숨김 */
+      text-overflow: ellipsis;    /* 내용이 넘어가면 말줄임표가 나온다.*/
+    }
+    h3:hover{   /* 마우스를 위치시키면 적용되는 스타일 / hover: 마우스를 위에 올림 */
+      white-space: normal;
+      overflow: visible;
+    }
+    div{
+      width: 300px; height: 100px; border: 1px solid black;
+      /* white-space: nowrap;    nowrap: 박스의 줄 제한을 받지 않겠다. */
+      overflow: scroll;
+      /* hidden: 박스를 벗어나면 글을 숨겨라.
+        scroll: 내용이 박스 밑으로 넘어가면 스크롤 가능하도록 */
+    }
+    h2{
+      width: 800px; height: 200px; border: 1px solid black;
+      font-size: 50px;
+      text-decoration: overline;    /* 글자 밑줄 */
+      text-transform: ;   /* 영문 텍스트를 대문자나 소문자로 바꾸는 속성 */
+      text-shadow: 35px 35px 5px #f00;    /* 글자 그림자 / text-shadow: (오른쪽) (아래) (흩뿌리는 정도) (색상) */
+      white-space: ;    /* 공백 처리방법 */
+      letter-spacing: 30px;   /* 글자 간 간격(자간) */
+      word-spacing: 40px;   /* 단어 간 간격(어간) */
+      color: black;   /* 글자 색상 */
+      /* rgb(약 1700만개), 글자(256개), 16진수 코드(약 30만개)
+      rgb만 투명도 적용 가능 / rgb(0,0,0,0.2) -> 마지막 수가 투명도 */
+      /* color: rgb(0, 0, 0, 0.8);
+      color: black;
+      color: #000000 or color: #000 */
+      margin: 0 auto;   /* 사각모델 정렬 */
+      text-align: center;   /* 글자 가로 정렬 */
+      line-height: 190px;   /* 줄 간격 -> 글자 세로 정렬에 사용 */
+      /* 세로 가운데 정렬이 없음. 대신 line-height 사용. padding-top은 밑에가 같이 늘어나서 잘 쓰지 않음.
+      그래서 padding을 쓰려면 box-sizing: border-box를 해줘야 하고 또 단점이 글자크기까지 고려해야 함. */
+      /* padding-top: 60px; box-sizing: border-box; */
+    }
+    p{
+      width: 400px; height: 500px; border: 1px solid black;
+      font-size: 17px; font-weight: 700;
+      line-height: 60px;    /* 줄간격 / ex. 60px -> 글자 위 30px 아래 30px */
+      text-align: justify;
+      text-indent: ;    /* 들여쓰기 간격 */
+    }
+
+
+
+
+  </style>
+
+</head>
+<body>
+  <h3>
+    정부가 국민연금의 보험료율을 현행 9%에서 13%로 올리고 소득대체율은 42% 상향하는 개혁안을 내놨다. 보험료율은 인상폭은 세대별로 차등을 두고 수명이나 가입자 수와 연계해 연금 수급액을 자동으로 조정하는 ‘자동조정장치’ 도입도 검토한다.
+  </h3>
+  <div>
+    정부가 국민연금의 보험료율을 현행 9%에서 13%로 올리고 소득대체율은 42% 상향하는 개혁안을 내놨다. 보험료율은 인상폭은 세대별로 차등을 두고 수명이나 가입자 수와 연계해 연금 수급액을 자동으로 조정하는 ‘자동조정장치’ 도입도 검토한다.
+  </div>
+
+  <h2>글꼴 관련 스타일</h2>
+  <p>
+    정부가 국민연금의 보험료율을 현행 9%에서 13%로 올리고 소득대체율은 42% 상향하는 개혁안을 내놨다. 보험료율은 인상폭은 세대별로 차등을 두고 수명이나 가입자 수와 연계해 연금 수급액을 자동으로 조정하는 ‘자동조정장치’ 도입도 검토한다.
+    <br/>
+    기초연금은 2026년 저소득층부터 40만원으로 10만원 인상한다. 국민연금 의무가입 상한 연령을 59세에서 64세로 늦추는 방안도 논의한다.
+    <br/>
+    정부는 9월 4일 올해 제3차 국민연금심의위원회를 열어 ‘연금개혁 추진 계획’을 확정하고 이런 개혁안을 발표했다.
+    <br/>
+    보험료율은 가입자의 월소득(기준소득월액) 중 국민연금 보험료로 내는 비율이다. 직장인은 노동자와 사측이 절반씩 부담한다. 지역가입자는 가입자 개인이 모두 부담한다.
+  </p>
+  
+</body>
+</html>
