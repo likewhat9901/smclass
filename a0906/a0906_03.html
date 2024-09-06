@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      height: 200px; /* border: 10px dashed black;   solid: 실선 / dotted: 점섬 / dashed: 선으로 된 점선 */
+      /* border의 기초 구성 */
+      border-width: 5px 5px 5px 5px;    
+      /* 순서(4개 입력, 시계방향): top->right->bottom->left / 순서(3개 입력): 위->좌우->아래 / 순서(2개 입력): 위아래->좌우 */
+      border-style: solid;
+      border-color: black;
+      background: yellow;
+      margin-bottom: 30px;
+    }
+    .c01{
+      width: 1000px;
+      border-radius: 20px;
+    }
+    .c02{
+      width: 50%;   /* % -> 반응형 사이트에서 주로 활용 */
+    }
+    .c03{
+      width: 200px; height: 200px;
+      border-radius: 100px;
+      /* border-top-left-radius: ;
+      border-top-right-radius: ;
+      border-bottom-left-radius: ; */
+      background: url(images/ive01_01.jpg);
+      background-size: 100%;
+      background-position: -5px 0px;
+    }
+    .c03:hover{
+      background-size: 120%;
+      background-position: -30px 0px;
+      cursor: pointer;
+      box-shadow: 5px 5px 3px 5px gray;   /* 왼쪽 오른쪽 그림자두께 번지는정도 색깔 */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="c01"></div>
+  <div class="c02"></div>
+  <div class="c03"></div>
+  
+</body>
+</html>
