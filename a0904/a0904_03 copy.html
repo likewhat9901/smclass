@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .phone{
+      width: 40px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <form action="http://www.daum.net" name="form" method="get">
+    <label for="id">아이디</label>
+      <input type="text" name="id" id="id" maxlength="10" value=""><br/>
+    <label for="pw">패스워드</label>
+      <input type="password" name="pw" id="pw" maxlength=""><br/>
+    <label for="phone2">연락처</label>
+      <select name="phone" id="phone1">
+        <option value="010">010</option>
+        <option value="011">011</option>
+        <option value="070">070</option>
+      </select> -
+      <input type="text" id="phone2" class="phone" maxlength="4" value=""> -
+      <input type="tel" name="" id="phone3" class="phone" maxlength="4"><br/>
+    <label for="gender">성별 :</label>
+      <label for="male">남자</label>
+        <input type="radio" name="gender" id="male" value="male">
+      <label for="male">여자</label>
+        <input type="radio" name="gender" id="female" value="female"><br/>
+    <label for="grade"></label>
+      <input type="text" id="grade" maxlength=""><br/>
+    
+    <input type="submit" name="login" id="login" value="로그인">
+
+
+  </form>
+  
+</body>
+</html>

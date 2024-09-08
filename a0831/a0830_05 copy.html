@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map{border:3px solid black; width:100%; height:350px;
+            font-size:80px; display: flex; align-items: center; justify-content: center;}
+
+    </style>
+  </head>   
+  <body>
+    <div>엘라스틴 샴푸 5000원</div>
+    <button onclick="buyBtn()">더하기</button>
+    <span id = "cnt">0개</span>
+    
+    <div id = "map">0원</div>
+
+    <script>
+      var price = 5000;
+      var result = 0;  // 금액
+      var count = 0;  // 개수
+
+      //함수 -> 함수는 엄청 많이 쓴다.
+      function buyBtn(){  //위에 buyBtn()이 밑의 buyBtn()과 연결되어 실행됨.
+        //alert("엘라스틴 샴푸를 장바구니에 담았습니다.");
+        
+        result = result + 5000;  //Q. 기본 문자형이지 않나?, 위에 result = 0과 충돌하지 않는 이유?
+        count = count + 1;
+
+        document.getElementById('map').innerText = result+"원";
+        document.getElementById("cnt").innerText = count+"개";
+
+      }
+
+
+      /*
+      //div: 사각형 모양을 만들어주는 태그
+      
+      document.getElementById('map').innerText = 500; // 지도를 표시할 div 
+      //getElementById() :  지정 위치의 값을 연동시켜 같이 변화시키는 기능. ex.쿠팡에서 구매개수를 늘리면 값이 같이 늘어나는 기능.
+      
+      //문제: 두수를 입력받아 두수를 더하기 해서 출력하시오.
+      */
+      /*
+      var num1 = Number(prompt("숫자1을 입력하세요."));
+      var num2 = Number(prompt("숫자2을 입력하세요."));
+      var result = num1 + num2;
+         
+      document.getElementById('map').innerText = result;
+      */
+      
+    
+    </script>
+
+  </body>
+</html>
