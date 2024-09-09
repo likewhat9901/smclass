@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0; padding: 0;
+    }
+    img{
+      width: 200px; height: 150px; display: inline-block;
+    }
+    #i01{
+      /* display: none; */
+      /* visibility: hidden; */
+      /* overflow: hidden; */
+    }
+    #i01:hover{
+      /* display: none; */
+      visibility: hidden;
+    }
+    span{
+      display: inline-block;    /* inline 요소 + block 요소 */
+      width: 200px; height: 100px;    /* inline요소이기 때문에 width, height 적용 불가 */
+      border: 3px solid black;
+      padding-left: 30px; margin-top: 20px;
+    }
+    #s01{
+      background: yellow;
+    }
+    #s01{
+      background: green;
+    }
+    #s01{
+      background: gray;
+    }
+  </style>
+</head>
+<body>
+  <span id="s01">가나다</span>
+  <span id="s02">가나다</span>
+  <span id="s03">가나다</span>
+  <br/>
+  <button type="button">버튼</button>
+  <img src="images/a01.jpg" alt="">
+  <img src="images/a02.jpg" alt="" id="i01">
+  <img src="images/a03.jpg" alt="">
+</body>
+</html>
