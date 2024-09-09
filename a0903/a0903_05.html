@@ -53,21 +53,15 @@
       height: 45px;
     }
 
+
   </style>
 </head>
 <body>
-
   <div id="content">
-    <select id="year">
-
-    </select>
+    <select id="year"></select>
     <h3>뉴스</h3>
     <button onclick="boardBtn()">게시판 가져오기</button>
-    <div id="floatbox">
-      <div id="floatbox2">
-
-      </div>
-    </div>
+    <div id="floatbox"></div>
     <table>
       <colgroup>
         <col width="10%">
@@ -104,7 +98,7 @@
         //     var i=0; i<10; i++ : 1씩증가
         // }
         
-        data += '<tr>';
+          data += '<tr>';
           data += '<td>'+(i+1)+'</td>';
           data += '<td>익스프레스 체크아웃 서비스 오픈'+(i+1)+'</td>';
           data += '<td>포레스트</td>';
@@ -128,6 +122,7 @@
       //ydata += '<option>1901<option>';
 
       ydata += '<option>'+i+'년'+'</option>';
+
 
     }
 
