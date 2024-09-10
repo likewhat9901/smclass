@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a{
+      text-decoration: none;
+
+    }
+
+    input[type="text"]{
+      background: #fff;
+    }
+    input[type="text"]:focus{
+      background: yellow;
+    }
+
+    input[type="radio"],input[type="checkbox"]{
+      opacity: 0;
+      width: 24px;
+    }
+    input[type="radio"]+label,input[type="checkbox"]+label{
+      background: url(images/radio_off.jpg) no-repeat 0px 3px;
+      width: 24px; height: 24px;
+      margin-left: -24px;
+      padding-left: 24px;
+    }
+    input[type="radio"]:checked+label,input[type="checkbox"]:checked+label{
+      background: url(images/radio_on.jpg) no-repeat 0px 3px;
+      width: 24px; height: 24px;
+      margin-left: -24px;
+      padding-left: 24px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <h2><a href="http://www.google.co.kr">회원가입</a></h2>
+  <form action="#" name="frm" method="get">
+    <label for="">아이디</label>
+    <input type="text" name="id" id="id" value="aaa" disabled><br/>
+    <label for="">패스워드</label>
+    <input type="password" name="pw" id="pw"><br/>
+    <label for="">전화번호</label>
+    <input type="number" name="tel" id="tel"><br/>
+    <label for="">성별 : </label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">남자</label>
+    <input type="radio" name="gender" id="female" value="female" checked>
+    <label for="female">여자</label><br/>
+    <label for="">취미</label>
+    <input type="checkbox" name="hobby" id="game" value="game">
+    <label for="game">게임</label>
+    <input type="checkbox" name="hobby" id="golf" value="golf" checked>
+    <label for="golf">골프</label>
+    <input type="checkbox" name="hobby" id="swim" value="swim">
+    <label for="swim">수영</label>
+    <input type="checkbox" name="hobby" id="run" value="run">
+    <label for="run">조깅</label>
+    <input type="checkbox" name="hobby" id="book" value="book">
+    <label for="book">독서</label>
+    
+    
+    <br/><br/>
+    <button type="button" onclick="memBtn()">회원가입</button>
+  </form>
+  <script>
+    function memBtn() {
+/*       alert("회원가입 버튼 클릭");
+      alert(document.getElementById("id").value) */
+
+      var id = document.getElementById("id").value
+
+      if (id == "") {
+        alert("아이디를 입력하셔야 합니다.")
+        document.getElementById("id").focus();
+      }
+      frm.submit();
+    }
+
+  </script>
+</body>
+</html>
