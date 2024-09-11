@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0; padding: 0;
+    }
+
+    header{
+      width: 900px; height: 900px;
+      margin: 30px auto;
+      border: 2px solid black;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      /* flex-start: 왼쪽정렬 / flex-end: 오른쪽정렬 / center: 가운데정렬 / space-between: 양끝정렬 / space-around: 간격정렬 */
+      align-items: center;
+      /* center: 중앙정렬 / flex-start: 상단정렬 / flex-end: 하단정렬 */
+      align-content: space-between;
+    }
+    div{
+      width: 100px; height: 100px;
+      background: yellow;
+      border: 5px solid black;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </header>
+  
+</body>
+</html>
